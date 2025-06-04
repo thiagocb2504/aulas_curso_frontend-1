@@ -1,0 +1,45 @@
+.body{
+    background-color: #87CEEB;
+}
+
+.nome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.div{
+    background-color: #F5F5F5;
+    width: 400px;
+    height: 475px;
+    margin: 50px auto;
+    border-radius: 25px;
+}
+
+.imagem{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.paragrafo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.redes{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}

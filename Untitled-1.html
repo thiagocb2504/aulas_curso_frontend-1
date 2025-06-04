@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil do Usuário</title>
+
+  <!-- 📎 Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- 🎨 Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- 🔲 Container Bootstrap -->
+  <div class="container my-5">
+    <!-- 🔳 Row e Col Bootstrap -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        
+        <!-- 🃏 Card Bootstrap + Tailwind -->
+        <div class="card p-4 shadow-lg rounded-2xl bg-green-300">
+          <div class="text-center">
+            <!-- 👤 Foto de Perfil -->
+            <img src="eu.jpg" alt="Foto de Perfil" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover shadow-md" />
+            
+            <!-- 🧑 Nome, Cargo e Descrição -->
+            <h2 class="text-2xl font-bold text-black-1000">Thiago Brito</h2>
+            <p class="text-black-1000 text-sm">Futuro Desenvolvedor Full-Stack</p>
+            <p class="text-black-1000 mt-2">Apaixonado por tecnologia, com foco no back. Porém interessado em aprender o front também.</p>
+          </div>
+
+          <!-- 📋 Lista de Informações -->
+          <ul class="mt-4 space-y-2 text-sm text-black-700">
+            <li><strong>Email:</strong> thiagodacostab2504@gmail.com</li>
+            <li><strong>Telefone:</strong> (61) 99932-0341</li>
+            <li><strong>Localização:</strong> Brasília, DF</li>
+          </ul>
+
+          <!-- 🔘 Botão Estilizado com Tailwind -->
+          <div class="text-center mt-5">
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-600">Entrar em contato</button>
+          </div>
+        </div>
+        <!-- 🃏 Fim do Card -->
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚙️ Bootstrap JS (opcional, para componentes interativos como dropdowns ou modais) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

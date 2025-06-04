@@ -1,0 +1,75 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro para o Evento no Museu do Flamengo 2025</title>
+</head>
+<body>
+    <h1>Museu do Flamengo 2025!</h1>
+    <p>Bem-vindo(a) ao evento onde você conhecerá a linda jornada do Flamengo! Preencha o formulário abaixo para se cadastrar.</p>
+
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="data_nascimento">Data de nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="outro" name="genero" value="Outro">
+        <label for="outro">Outro</label><br><br>
+
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="81" name="interesses1" value="81">
+        <label for="81">Camisa autografada pelo plantel de 81</label><br>
+        <input type="checkbox" id="Atual" name="interesses2" value="Atual">
+        <label for="Atual">Camisa autografada pelo atual elenco atual</label><br>
+        <input type="checkbox" id="Ingresso" name="interesses3" value="Ingresso">
+        <label for="Ingresso">Ingresso para a Final da Libertadores</label><br><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado">
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="BSB">Brasilia</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentários adicionais:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Programação do Evento</h2>
+    <table border="1">
+        <tr>
+            <th>Horário</th>
+            <th>Atividade</th>
+            <th>Palestrante</th>
+        </tr>
+        <tr>
+            <td>08:00</td>
+            <td>Abertura e Boas-Vindas</td>
+            <td>Equipe FLATV</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td>História do Mais Querido</td>
+            <td>Zico</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td>Tour pelo Museu</td>
+            <td>Presidente BAP</td>
+        </tr>
+    </table>
+</body>
+</html>

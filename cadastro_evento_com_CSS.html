@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro para o Evento no Museu do Flamengo 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #ff0000, #000000);
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .inline-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .inline-option {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            width: auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #cc0000;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+            background-color: white;
+            color: black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Museu do Flamengo 2025!</h1>
+    <p>Bem-vindo(a) ao evento onde você conhecerá a linda jornada do Flamengo! Preencha o formulário abaixo para se cadastrar.</p>
+
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento">
+
+        <label>Gênero:</label>
+        <div class="inline-group">
+            <div class="inline-option">
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="inline-option">
+                <input type="radio" id="feminino" name="genero" value="Feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="inline-option">
+                <input type="radio" id="outro" name="genero" value="Outro">
+                <label for="outro">Outro</label>
+            </div>
+        </div>
+
+        <label>Interesses:</label>
+        <div class="inline-group">
+            <div class="inline-option">
+                <input type="checkbox" id="interesse_81" name="interesses[]" value="81">
+                <label for="interesse_81">Camisa autografada pelo plantel de 81</label>
+            </div>
+            <div class="inline-option">
+                <input type="checkbox" id="interesse_atual" name="interesses[]" value="Atual">
+                <label for="interesse_atual">Camisa autografada pelo atual elenco</label>
+            </div>
+            <div class="inline-option">
+                <input type="checkbox" id="interesse_ingresso" name="interesses[]" value="Ingresso">
+                <label for="interesse_ingresso">Ingresso para a Final da Libertadores</label>
+            </div>
+        </div>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="BSB">Brasília</option>
+        </select>
+
+        <label for="comentarios">Comentários adicionais:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Programação do Evento</h2>
+    <table>
+        <tr>
+            <th>Horário</th>
+            <th>Atividade</th>
+            <th>Palestrante</th>
+        </tr>
+        <tr>
+            <td>08:00 - 10:00</td>
+            <td>Abertura e Boas-Vindas</td>
+            <td>Equipe FLATV</td>
+        </tr>
+        <tr>
+            <td>10:00 - 12:00</td>
+            <td>História do Mais Querido</td>
+            <td>Zico</td>
+        </tr>
+        <tr>
+            <td>12:00 - 14:00</td>
+            <td>Tour pelo Museu</td>
+            <td>Presidente BAP</td>
+        </tr>
+    </table>
+
+</body>
+</html>

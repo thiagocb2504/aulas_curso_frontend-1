@@ -1,0 +1,25 @@
+.classeUM{
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    border: 10px solid white;
+    border-radius: 60px;
+}
+
+body{
+    background-color: rgb(184, 210, 233);
+}
+
+div{
+    background-color: #476ecc;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+h1,p{
+    padding: 30px, 50px;
+}
